@@ -9,9 +9,9 @@
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="overflow-y-scroll">
     <!--navbar-->
-    <nav class="navbar bg-primary navbar-dark shadow sticky-top">
+    <nav class="navbar bg-primary navbar-dark shadow sticky-top rounded-bottom">
         <div class="container-fluid">
             <a href="index.html" class="navbar-brand">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-bank"
@@ -20,154 +20,205 @@
                         d="m8 0 6.61 3h.89a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v7a.5.5 0 0 1 .485.38l.5 2a.498.498 0 0 1-.485.62H.5a.498.498 0 0 1-.485-.62l.5-2A.5.5 0 0 1 1 13V6H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 3h.89zM3.777 3h8.447L8 1zM2 6v7h1V6zm2 0v7h2.5V6zm3.5 0v7h1V6zm2 0v7H12V6zM13 6v7h1V6zm2-1V4H1v1zm-.39 9H1.39l-.25 1h13.72z" />
                 </svg>
             </a>
+            <div class="bg-light shadow sticky top rounded-bottom">
+                <ul class="nav nav-pills">
 
-            <div>
+                    <li class="nav-item">
+                        <a class="nav-link link-dark rounded-bottom focus-ring link-underline-opacity-0"
+                            onmouseover="this.classList.add('bg-white', 'shadow-sm')"
+                            onmouseout="this.classList.remove('bg-white', 'shadow-sm')" href="index.html">Home</a>
+                    </li>
 
-                 <div class="border border-4 px-3 py-1 fw-bold">
-                    Welcom to Khan
-                </div>
-                </div>
+                    <li class="nav-item">
+                        <a class="nav-link link-dark rounded-bottom focus-ring link-underline-opacity-0"
+                            onmouseover="this.classList.add('bg-white', 'shadow-sm')"
+                            onmouseout="this.classList.remove('bg-white', 'shadow-sm')"
+                            href="Student Details.html">Student Details</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link link-dark rounded-bottom focus-ring link-underline-opacity-0"
+                            onmouseover="this.classList.add('bg-white', 'shadow-sm')"
+                            onmouseout="this.classList.remove('bg-white', 'shadow-sm')" aria-current="page"
+                            href="#">Active</a>
+                    </li>
+                    <div class="dropdown">
+  
+    <button type="button" class="btn btn-light dropdown-toggle" 
+            onmouseover="this.classList.add('bg-white', 'shadow-sm')"
+            onmouseout="this.classList.remove('bg-white', 'shadow-sm')"
+            data-bs-toggle="dropdown" aria-expanded="false">
+        dropdown
+    </button>
+    
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+</div>
+
+                    <li class="nav-item">
+                        <a class="nav-link link-dark rounded-bottom focus-ring link-underline-opacity-0"
+                            onmouseover="this.classList.add('bg-white', 'shadow-sm')"
+                            onmouseout="this.classList.remove('bg-white', 'shadow-sm')" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="bg-light shadow sticky top rounded-bottom">
+
+                <a href="register.html" class="btn link-dark rounded-bottom focus-ring link-underline-opacity-0"
+                    onmouseover="this.classList.add('bg-white', 'shadow-sm')"
+                    onmouseout="this.classList.remove('bg-white', 'shadow-sm')">Register</a>
+                <a href="login.html" class="btn link-dark rounded-bottom focus-ring link-underline-opacity-0"
+                    onmouseover="this.classList.add('bg-white', 'shadow-sm')"
+                    onmouseout="this.classList.remove('bg-white', 'shadow-sm')">sign in</a>
+            </div>
         </div>
     </nav>
 
+<div class="container-fluid">
 
-    
-     <h2 class="fw-bold mb-3">Dashboard</h2>
-    
-     <div class="mb-4"> 
-     <a href="details.html" class="btn btn-primary shadow">Student Details</a>
-</div>
+    <h2 class="fw-bold mb-3">Dashboard</h2>
 
-     <div class="row g-7 mb-5">
 
-    <div class="col-4 text-center">
-        <div class="border border-4 p-3">
-            <h4 class="fw-bold">Total Students</h4>
-            <h3 class="fw-bold">10</h3>
+    <div class="row g-5 mb-5 justify-content-center">
+
+        <div class="col-4 text-center">
+            <div class="border rounded-3 border-6 p-2 bg-light">
+                <h4 class="fw-bold">Total Students</h4>
+                <h3 class="fw-bold">10</h3>
+            </div>
         </div>
+
+        <div class="col-4 text-center">
+            <div class="border rounded-3 border-6 p-2 bg-light">
+                <h4 class="fw-bold">Total Present</h4>
+                <h3 class="fw-bold">08</h3>
+            </div>
+        </div>
+
+        <div class="col-4 text-center">
+            <div class="border rounded-3 border-6 p-2 bg-light">
+                <h4 class="fw-bold">Total Absent</h4>
+                <h3 class="fw-bold">02</h3>
+            </div>
+        </div>
+
     </div>
 
-    <div class="col-4 text-center">
-        <div class="border border-4 p-3">
-            <h4 class="fw-bold">Total Present</h4>
-            <h3 class="fw-bold">08</h3>
-        </div>
+    <table class="table table-striped-column table table-white table-hover">
+        <thead>
+            <tr>
+                <th scope="col">Student name</th>
+                <th scope="col">roll #</th>
+                <th scope="col">Class</th>
+                <th scope="col">Status</th>
+                <th scope="col"> Date</th>
+                <th scope="col">Reason</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Student 1</td>
+                <td>101</td>
+                <td>10th</td>
+                <td>Present</td>
+                <td>20-Jun-2026</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td>student 2</td>
+                <td>102</td>
+                <td>10th</td>
+                <td>Absent</td>
+                <td>20-Jun-2026</td>
+                <td>Fever</td>
+            </tr>
+
+            <tr>
+                <td>Student 3</td>
+                <td>103</td>
+                <td>9th</td>
+                <td>Present</td>
+                <td>20-Jun-2026</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td>Student 4</td>
+                <td>104</td>
+                <td>9th</td>
+                <td>Present</td>
+                <td>20-Jun-2026</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td>Student 5</td>
+                <td>105</td>
+                <td>8th</td>
+                <td>Absent</td>
+                <td>20-Jun-2026</td>
+                <td>Leave</td>
+            </tr>
+
+            <tr>
+                <td>Student 6</td>
+                <td>106</td>
+                <td>8th</td>
+                <td>Present</td>
+                <td>20-Jun-2026</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td>Student 7</td>
+                <td>107</td>
+                <td>10th</td>
+                <td>Present</td>
+                <td>20-Jun-2026</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td>Student 8</td>
+                <td>108</td>
+                <td>7th</td>
+                <td>Absent</td>
+                <td>20-Jun-2026</td>
+                <td>Medical</td>
+            </tr>
+
+            <tr>
+                <td>Student 9</td>
+                <td>109</td>
+                <td>7th</td>
+                <td>Present</td>
+                <td>20-Jun-2026</td>
+                <td>-</td>
+            </tr>
+
+            <tr>
+                <td>Student 10</td>
+                <td>110</td>
+                <td>6th</td>
+                <td>Present</td>
+                <td>20-Jun-2026</td>
+                <td>-</td>
+            </tr>
     </div>
-
-    <div class="col-4 text-center">
-        <div class="border border-4 p-3">
-            <h4 class="fw-bold">Total Absent</h4>
-            <h3 class="fw-bold">02</h3>
-        </div>
-    </div>
-
-</div>
-
-<table class="table table-striped-column">
-<thead>
-    <tr>
-      <th scope="col">Student name</th>
-      <th scope="col">roll #</th>
-      <th scope="col">Class</th>
-      <th scope="col">Status</th>
-      <th scope="col"> Date</th>
-      <th scope="col">Reason</th>
-    </tr>
-  </thead>
-
-<tbody>
-    
-     <tr>
-        <td>Student 1</td>
-        <td>101</td>
-        <td>10th</td>
-        <td>Present</td>
-        <td>20-Jun-2026</td>
-        <td>-</td>
-    </tr>
-
-    <tr>
-        <td>student 2</td>
-        <td>102</td>
-        <td>10th</td>
-        <td>Absent</td>
-        <td>20-Jun-2026</td>
-        <td>Fever</td>
-    </tr>
-
-    <tr>
-        <td>Student 3</td>
-        <td>103</td>
-        <td>9th</td>
-        <td>Present</td>
-        <td>20-Jun-2026</td>
-        <td>-</td>
-    </tr>
-
-    <tr>
-        <td>Student 4</td>
-        <td>104</td>
-        <td>9th</td>
-        <td>Present</td>
-        <td>20-Jun-2026</td>
-        <td>-</td>
-    </tr>
-
-    <tr>
-        <td>Student 5</td>
-        <td>105</td>
-        <td>8th</td>
-        <td>Absent</td>
-        <td>20-Jun-2026</td>
-        <td>Leave</td>
-    </tr>
-
-    <tr>
-        <td>Student 6</td>
-        <td>106</td>
-        <td>8th</td>
-        <td>Present</td>
-        <td>20-Jun-2026</td>
-        <td>-</td>
-    </tr>
-
-    <tr>
-        <td>Student 7</td>
-        <td>107</td>
-        <td>10th</td>
-        <td>Present</td>
-        <td>20-Jun-2026</td>
-        <td>-</td>
-    </tr>
-
-    <tr>
-        <td>Student 8</td>
-        <td>108</td>
-        <td>7th</td>
-        <td>Absent</td>
-        <td>20-Jun-2026</td>
-        <td>Medical</td>
-    </tr>
-
-    <tr>
-        <td>Student 9</td>
-        <td>109</td>
-        <td>7th</td>
-        <td>Present</td>
-        <td>20-Jun-2026</td>
-        <td>-</td>
-    </tr>
-
-    <tr>
-        <td>Student 10</td>
-        <td>110</td>
-        <td>6th</td>
-        <td>Present</td>
-        <td>20-Jun-2026</td>
-        <td>-</td>
-    </tr>
-    </table>
-</tbody>
+        </table>
+    </tbody>
 
 
 
