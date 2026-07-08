@@ -39,6 +39,13 @@
                     <li class="nav-item">
                         <a class="nav-link link-dark rounded-bottom focus-ring link-underline-opacity-0"
                             onmouseover="this.classList.add('bg-white', 'shadow-sm')"
+                            onmouseout="this.classList.remove('bg-white', 'shadow-sm')"
+                            href="Dashboard.html">Dashboard</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link link-dark rounded-bottom focus-ring link-underline-opacity-0"
+                            onmouseover="this.classList.add('bg-white', 'shadow-sm')"
                             onmouseout="this.classList.remove('bg-white', 'shadow-sm')" aria-current="page"
                             href="#">Active</a>
                     </li>
@@ -105,7 +112,8 @@
                  
         <div class="col-12 col-lg-2 col-md-4 col-sm-6">
             <div class="card mb-4">
-                <img src="assits/st1.svg" class="card-img-top" alt="Ali" style="width: 100%; height: 220px; object-fit: cover;">
+                <a href="Students-Profile.html">
+                <img src="assits/st1.svg" class="card-img-top" alt="Ali" style="width: 100%; height: 220px; object-fit: cover;"></a>
                 <div class="card-body bg-dark text-white">
                     <h5 class="card-title">Ali</h5>
                     <p class="card-text">Web Development</p>
@@ -305,7 +313,7 @@
     </div>
 </div>
 
-<!-- Modal Formulation (Yeh bilkul perfect hai) -->
+<!--Modal model-->
 <div class="modal fade" id="addStudentModal" tabindex="-1" aria-labelledby="addStudentModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
